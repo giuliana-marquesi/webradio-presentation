@@ -1,0 +1,2 @@
+pandoc -t beamer estrutura-apresentacao.md -V theme:CambridgeUS -V lang=pt-BR -V innertheme:circles --listings -H listings-setup.tex -o apresentacao-webradio.pdf
+pandoc -t beamer estrutura-apresentacao.md -V theme:CambridgeUS -V lang=pt-BR -V innertheme:circles --filter ./superfilter.py -o apresentacao-webradio.pdf
